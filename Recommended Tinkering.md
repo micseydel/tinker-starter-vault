@@ -1,0 +1,19 @@
+- "(speak)" then be patient
+	- (check, e.g. with Cmd+hover over with mouse)
+- ---
+- "Peanut just peed in the back litter box"
+	- `[[Transcribed mobile notes (2024-MM-DD)]]`
+		- e.g. [[Transcribed mobile notes (2024-09-26)]]
+	- `[[CatsTranscriptions notes (2024-MM-DD)]]`
+		- e.g. [[CatsTranscriptions notes (2024-09-26)]]
+	- `[[Litter boxes (2024-MM-DD)]]`
+		- e.g. [[Litter boxes (2024-09-26)]]
+	- [[Upcoming Notifications]]
+- "I just sifted poop from the back litter box"
+	- Same as above
+	- `[[Litter boxes sifting (2024-MM-DD)]]`
+		- e.g. [[Litter boxes sifting (2024-09-26)]]
+- "Remind me to sift the litter box"
+	- [[Reminders]]
+	- [[Notification Center]]
+- [[Example Now Note|Example "Now" Note]]
