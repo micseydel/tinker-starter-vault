@@ -3,7 +3,7 @@
 - ---
 - "Peanut just peed in the back litter box"
 	- `[[Transcribed mobile notes (2024-MM-DD)]]`
-		- e.g. [[Transcribed mobile notes (2024-09-26)]]
+		- e.g. [[Transcribed mobile notes (2024-09-26)]] (consider right-click "Open to the right")
 	- `[[CatsTranscriptions notes (2024-MM-DD)]]`
 		- e.g. [[CatsTranscriptions notes (2024-09-26)]]
 	- `[[Litter boxes (2024-MM-DD)]]`
