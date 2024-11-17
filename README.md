@@ -1,11 +1,19 @@
 ---
-aliases:
-- Start Here
+aliases: []
 ---
+> [!caution] FYI
+> This is a "vault" intended to be read with [Obsidian](https://obsidian.md/). If you're viewing this [on Github](https://github.com/micseydel/tinker-starter-vault), you should download both this vault and Obsidian if you want to try it yourself.
+> 
+> If you run into problems, please create a Github issue
+> - [tinker-starter-vault](https://github.com/micseydel/tinker-starter-vault/issues) for documentation or getting-started issues
+> 	- ==these instructions need to be modified for Windows==, but likely work on Apple Silicon (where they were)
+> - [tinker-casting](https://github.com/micseydel/tinker-casting/issues) for issues that are likely code rather than vault related
+> 	- [ ] VRAM requirements for Whisper need documentation
+
 # This is Obsidian
 
 > [!info] Clicking here will show the source for this part of the note
-> - Obsidian mostly uses Markdown
+> - Obsidian mostly uses [Markdown](https://en.wikipedia.org/wiki/Markdown)
 > - This is a [Callout](https://help.obsidian.md/Editing+and+formatting/Callouts) - not part of the Markdown standard
 
 - Consider installing a "Community Plugin" for a code copy button
@@ -18,8 +26,9 @@ aliases:
 
 # Getting Started
 
-- Install Home Brew if necessary - [brew.sh](https://brew.sh)
-- `brew install sbt`
+- Install Home Brew if you haven't already - [brew.sh](https://brew.sh)
+- Install sbt
+	- `brew install sbt`
 - Open a terminal in `tinker-casting`
 - Run `sbt compile`
 - If it doesn't work
@@ -38,13 +47,13 @@ aliases:
 		- I was prompted, but: Cmd+, for settings, search "plugins"
 	- Setup Scala SDK (as prompted)
 		- Download 2.12.20
-		- (sorry for no screenshots)
+		- [ ] ==(Reader: please consider adding a screenshot!)==
 	- File > Project stucture (or Cmd+;)
 		- Set Java SDK to version 17
 			- ![[Pasted image 20240922144608.png]]
 			- *My first go-through, it was in "Detected SDKs"*
 	- Load sbt Project (as prompted)
-- PyCharm is better for the Python code, but the Python gets fewer updates
+- PyCharm is better for the Python code, but the Python code gets fewer updates so 🤷
 
 # Python setup
 
@@ -53,7 +62,7 @@ aliases:
 - `python3.10 -m venv py3.10_venv`
 	- Install Python 3.10 if needed
 - (==May need to use Bash, not zsh, from here==)
-- `source py3.10_venv/bin/activate` ==every time== ^cd6662
+- `source py3.10_venv/bin/activate` ==every new terminal session== ^cd6662
 - `cd scripts`
 - `pip install --upgrade pip`
 - `pip install -r requirements.txt`
