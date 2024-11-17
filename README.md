@@ -1,6 +1,3 @@
----
-aliases: []
----
 > [!caution] FYI
 > This is a "vault" intended to be read with [Obsidian](https://obsidian.md/). If you're viewing this [on Github](https://github.com/micseydel/tinker-starter-vault), you should download both this vault and Obsidian if you want to try it yourself.
 > 
@@ -59,20 +56,21 @@ aliases: []
 
 - [ ] `brew install ffmpeg`
 	- Please note any PATH issues that came up
+- `cd scripts`
 - `python3.10 -m venv py3.10_venv`
 	- Install Python 3.10 if needed
 - (==May need to use Bash, not zsh, from here==)
+	- (zsh may work, actually, but I'm not sure about fish shell)
 - `source py3.10_venv/bin/activate` ==every new terminal session== ^cd6662
-- `cd scripts`
 - `pip install --upgrade pip`
 - `pip install -r requirements.txt`
-- Now let's confirm the install...
-- Make a recording targeting this vault's `playground` folder, e.g.
-	- `python rec_unlimited_play.py ~/Tinker\ Casting\ Starter\ Kit/Tinker\ Casting\ Starter\ Vault/playground/`
-	- This allows for capturing snippets of audio, initiated with Enter once started, ended with Ctrl+C, and the program can be ended with Ctrl+C while not recording
-- `time python transcribe_and_generate_markdown.py ~/Tinker\ Casting\ Starter\ Kit/Tinker\ Casting\ Starter\ Vault/playground/`
-	- This will download the large model, which is ~3GB
-- Try Cmd+O and "desktop_audio_capture" and observe the transcription
+- Now let's confirm the install and download the transcription model...
+	- Make a recording targeting this vault's `playground` folder, e.g.
+		- `python rec_unlimited_play.py ~/Tinker\ Casting\ Starter\ Kit/Tinker\ Casting\ Starter\ Vault/playground/`
+		- This allows for capturing snippets of audio, initiated with Enter once started, ended with Ctrl+C, and the program can be ended with Ctrl+C while not recording
+	- `time python transcribe_and_generate_markdown.py ~/Tinker\ Casting\ Starter\ Kit/Tinker\ Casting\ Starter\ Vault/playground/`
+		- This will download the large model, which is ~3GB
+- Try Cmd+O here in Obsidian with "`desktop_audio_capture`" and observe the transcription note
 
 # Rasa
 
@@ -83,7 +81,7 @@ aliases: []
 
 # ==Tinker Cast Deployment==
 
-- Environment variables
+- Environment variables; in the repository root, not in scripts/
 	- `cp tinkerenv.bash.template tinkerenv.bash`
 	- Open tinkerenv.bash and modify it as-needed per the inline comments, e.g.
 		- vaultRoot `/Users/tinkercaster/Tinker Casting Starter Kit/Tinker Casting Starter Vault`
@@ -92,15 +90,15 @@ aliases: []
 	- [ ] `chmod +x tinkerenv.bash`
 - In 3 separate terminals
 	- `caffeinate ./tinkerenv.bash`
-	- Within `scripts`, ensuring the venv is activated,
+	- Within `scripts`, ensuring the venv is activated in both,
 		- Start the transcription and Rasa server
 			- `python transcriber.py large 5001 ~/Tinker\ Casting\ Starter\ Kit/Tinker\ Casting\ Starter\ Vault/`
-		- Test by using the same script as earlier,
+		- Test by using the same capture script as earlier,
 			- `python rec_unlimited_play.py ~/Tinker\ Casting\ Starter\ Kit/Tinker\ Casting\ Starter\ Vault/attachments/mobile_audio_captures/`
 			- Look at the Python server output to see the transcription status
 				- (Expect transcription time to be ~50-100% of the recording time)
 			- Once the callback completes, check [[Transcribed mobile notes (2024-MM-DD)]], e.g. [[Transcribed mobile notes (2024-09-26)]] (Cmd+mouse over the note with the date corrected, it shouldn't take more than a moment to appear)
-		- [ ] ==[[Recommended Tinkering]]==
+		- [ ] ==[[Recommended Tinkering]]== (open this note in a new tab and then come back)
 - Logging
 	- logs/???.conf *examples*
 		- application (*everything*)
@@ -111,7 +109,7 @@ aliases: []
 		- cats
 		- rememberingtimekeeper
 	- Note - debug contains A LOT more info
-	- [[Errors and warning considered normal for this demo]]
+	- [[Errors and warning considered normal for this demo]] (non-exhaustive)
 
 
 # Tinkerbrain visualization (optional)
