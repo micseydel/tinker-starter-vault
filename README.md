@@ -74,9 +74,10 @@
 - Not strictly Python, but *these* create folders ==within this vault==:
 	- `playground`
 	- `_actor_notes/notification_center`
-	- `_actor_notes/ollamapropmts`
+	- `_actor_notes/ollamaprompts`
+	- `attachments/mobile_audio_captures`
 	- Consider the command:
-		- `mkdir -p playground _actor_notes/notification_center _actor_notes/ollamapropmts`
+		- `mkdir -p playground _actor_notes/notification_center _actor_notes/ollamaprompts attachments/mobile_audio_captures`
 - Now let's confirm the install and download the transcription model...
 	- Make a recording targeting this vault's `playground` folder, e.g.
 		- `python rec_unlimited_play.py ~/Tinker\ Casting\ Starter\ Kit/Tinker\ Casting\ Starter\ Vault/playground/`
