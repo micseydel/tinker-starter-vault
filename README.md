@@ -3,7 +3,7 @@
 > 
 > If you run into problems, please create a Github issue
 > - [tinker-starter-vault](https://github.com/micseydel/tinker-starter-vault/issues) for documentation or getting-started issues
-> 	- ==these instructions need to be modified for Windows==, but likely work on Apple Silicon (where they were)
+> 	- ==these instructions need to be modified for Windows==, but likely work on Apple Silicon (where they were tested)
 > - [tinker-casting](https://github.com/micseydel/tinker-casting/issues) for issues that are likely code rather than vault related
 > 	- [ ] VRAM requirements for Whisper need documentation
 
@@ -17,9 +17,9 @@
 	- Open **Settings** with Cmd+P "open settings" or Cmd+,
 	- Navigate to **Community plugins** on the left
 	- "Turn on community plugins" after reading the blurb
-	- Browse for "code copy" e.g. **Copy Inline Code** and enable after installing
-	- (Clicking to the left of the "Consider" top bullet above will collapse the inner bullets)
-	- (Some for "[[#This is Obsidian]]")
+	- Browse for "code copy" e.g. **Copy Inline Code** and *enable* after installing
+	- (Obsidian bullets can be collapsed and expanded, e.g. by clicking to the left of "Consider installing..." above)
+	- (Same for header sections like "[[#This is Obsidian]]")
 
 # Getting Started
 
@@ -28,10 +28,11 @@
 	- `brew install sbt`
 - Open a terminal in `tinker-casting`
 - Run `sbt compile`
-- If it doesn't work
+- If it doesn't work, you probably need the right Java version
 	- Install [sdkman](https://sdkman.io/) (once)
+		- (If you already have a system in place for managing multiple Java versions, you can consider using that instead of installing SDK man)
 	- `sdk install java 17.0.0-tem` (once)
-	- `source "~/.sdkman/bin/sdkman-init.sh"`
+	- `source ~/.sdkman/bin/sdkman-init.sh`
 		- ==([[What happens with Java versions beyond 17|This may need to be run every time]])==
 
 # Viewing the source
@@ -43,34 +44,47 @@
 	- Install Scala Plugin
 		- I was prompted, but: Cmd+, for settings, search "plugins"
 	- Setup Scala SDK (as prompted)
+		- ![[Pasted image 20241123171341.png]]
 		- Download 2.12.20
-		- [ ] ==(Reader: please consider adding a screenshot!)==
-	- File > Project stucture (or Cmd+;)
+	- File > Project structure (or Cmd+;)
 		- Set Java SDK to version 17
 			- ![[Pasted image 20240922144608.png]]
 			- *My first go-through, it was in "Detected SDKs"*
-	- Load sbt Project (as prompted)
+	- Load sbt Project
+		- It's the hexagon near the top right of the window
+		- ![[Pasted image 20241123172015.png]]
+		- ![[Pasted image 20241123172022.png|240]]
+		- Once expanded, use the button to the left of the plus (+) symbol to *Sync All sbt Projects*
+		- ![[Pasted image 20241123172045.png|480]]
 - PyCharm is better for the Python code, but the Python code gets fewer updates so 🤷
 
 # Python setup
 
 - [ ] `brew install ffmpeg`
 	- Please note any PATH issues that came up
-- `cd scripts`
+- `cd scripts` (this is generally for everything in the Python section)
 - `python3.10 -m venv py3.10_venv`
-	- Install Python 3.10 if needed
+	- Python 3.10 is needed (note: ==the specific dependencies need better documentation==)
 - (==May need to use Bash, not zsh, from here==)
 	- (zsh may work, actually, but I'm not sure about fish shell)
 - `source py3.10_venv/bin/activate` ==every new terminal session== ^cd6662
 - `pip install --upgrade pip`
 - `pip install -r requirements.txt`
+	- (this may take some time to download things)
+- Not strictly Python, but *these* create folders ==within this vault==:
+	- `playground`
+	- `_actor_notes/notification_center`
+	- `_actor_notes/ollamapropmts`
+	- Consider the command:
+		- `mkdir -p playground _actor_notes/notification_center _actor_notes/ollamapropmts`
 - Now let's confirm the install and download the transcription model...
 	- Make a recording targeting this vault's `playground` folder, e.g.
 		- `python rec_unlimited_play.py ~/Tinker\ Casting\ Starter\ Kit/Tinker\ Casting\ Starter\ Vault/playground/`
 		- This allows for capturing snippets of audio, initiated with Enter once started, ended with Ctrl+C, and the program can be ended with Ctrl+C while not recording
 	- `time python transcribe_and_generate_markdown.py ~/Tinker\ Casting\ Starter\ Kit/Tinker\ Casting\ Starter\ Vault/playground/`
 		- This will download the large model, which is ~3GB
-- Try Cmd+O here in Obsidian with "`desktop_audio_capture`" and observe the transcription note
+- Try Cmd+O here in Obsidian with "`desktop_audio_capture`" and observe the transcription note that ==does not== end in .wav, e.g.
+	- ![[Pasted image 20241123175540.png]]
 
 # Rasa
 
