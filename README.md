@@ -1,3 +1,9 @@
+---
+aliases:
+  - Start Here
+  - Getting Started
+---
+
 > [!caution] FYI
 > This is a "vault" intended to be read with [Obsidian](https://obsidian.md/). If you're viewing this [on Github](https://github.com/micseydel/tinker-starter-vault), you should download both this vault and Obsidian if you want to try it yourself.
 > 
