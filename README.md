@@ -71,21 +71,20 @@
 - `pip install --upgrade pip`
 - `pip install -r requirements.txt`
 	- (this may take some time to download things)
-- Not strictly Python, but *these* create folders ==within this vault==:
-	- `playground`
+- Not strictly Python or Scala, but *these* create folders ==within this vault==:
 	- `_actor_notes/notification_center`
 	- `_actor_notes/ollamaprompts`
 	- `attachments/mobile_audio_captures`
 	- Consider the command:
-		- `mkdir -p playground _actor_notes/notification_center _actor_notes/ollamaprompts attachments/mobile_audio_captures`
-- Now let's confirm the install and download the transcription model...
+		- `mkdir -p _actor_notes/notification_center _actor_notes/ollamaprompts attachments/mobile_audio_captures`
+- Now let's confirm the install by downloading and running the transcription model, before getting the whole system up and going...
+	- Do ***not*** "Click to create" below, Obsidian should detect the file being created and update automatically when the above command is used
 	- Make a recording targeting this vault's `playground` folder, e.g.
-		- `python rec_unlimited_play.py ~/Tinker\ Casting\ Starter\ Kit/Tinker\ Casting\ Starter\ Vault/playground/`
-		- This allows for capturing snippets of audio, initiated with Enter once started, ended with Ctrl+C, and the program can be ended with Ctrl+C while not recording
-	- `time python transcribe_and_generate_markdown.py ~/Tinker\ Casting\ Starter\ Kit/Tinker\ Casting\ Starter\ Vault/playground/`
-		- This will download the large model, which is ~3GB
-- Try Cmd+O here in Obsidian with "`desktop_audio_capture`" and observe the transcription note that ==does not== end in .wav, e.g.
-	- ![[Pasted image 20241123175540.png]]
+		- `python tinker_demo.py ~/Tinker\ Casting\ Starter\ Kit/Tinker\ Casting\ Starter\ Vault/playground/`
+		- The first time (only!), this will download the large model, which is ~3GB
+		- Try to keep this window open while the transcription is happening; even after the download, a short transcription will still take a moment and you can run the command above repeatedly to see the list added to
+	- ![[Playground]]
+- Consider installing the IntelliJ Python Community Edition plugin if you're working much with the Python code itself
 
 # Rasa
 

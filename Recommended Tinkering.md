@@ -1,3 +1,7 @@
+---
+aliases:
+  - Recommended Experiments
+---
 - Create a new audio note for each bullet below, with `python rec_unlimited_play.py ~/Tinker\ Casting\ Starter\ Kit/Tinker\ Casting\ Starter\ Vault/attachments/mobile_audio_captures/` like in [[README]]
 - "(speak)" then be patient, a 5s recording shouldn't take more than 30s to appear
 	- (check, e.g. with Cmd+hover over with mouse after updating the date)
