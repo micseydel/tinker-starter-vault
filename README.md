@@ -114,7 +114,7 @@
 			- Once the callback completes, check [[Transcribed mobile notes (2024-MM-DD)]], e.g. [[Transcribed mobile notes (2024-09-26)]] (Cmd+mouse over the note with the date corrected, it shouldn't take more than a moment to appear)
 		- [ ] ==[[Recommended Tinkering]]== (open this note in a new tab and then come back)
 - Logging
-	- logs/???.conf *examples*
+	- logs/???.log *examples*
 		- application (*everything*)
 		- error-warn
 		- notifications
