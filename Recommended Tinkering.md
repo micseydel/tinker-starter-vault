@@ -7,7 +7,7 @@ aliases:
 - Per [[README]],
 	- `tinkerenv.bash` is being used to bring up the Scala server
 	- `transcriber.py` is active (the Whisper model also takes a moment to load)
-- Find+replace
+- Find+replace all
 	- `YYYY-MM-DD`
 	- with your date, using Cmd+Opt+F, e.g.
 		- 2024-11-25
@@ -27,9 +27,9 @@ aliases:
 > - When you see "not created yet. Click to create." ==Do not click== - a note will be created by the code, and Obsidian will update automatically
 
 - "Peanut just peed in the back litter box"
-	- ![[Transcribed mobile notes (YYYY-MM-DD)]]
-		- Consider going into the note looking at the transcription's **backlinks** - the pane on right right in Obsidian (which may need to be expanded)
-	- ![[CatsTranscriptions notes (YYYY-MM-DD)]]
+	- ![[Transcribed mobile notes (YYYY-MM-DD)#All]]
+		- Consider going into the transcription (ref) note looking at the **backlinks** - the pane on right right in Obsidian (which may need to be expanded)
+	- ![[CatsTranscriptions notes (YYYY-MM-DD)#All]]
 	- ![[Litter boxes (YYYY-MM-DD)]]
 	- ![[Upcoming Notifications]]
 - "I just sifted poop from the back litter box"
@@ -39,6 +39,7 @@ aliases:
 - "Remind me to sift the litter box"
 	- ![[Reminders]]
 	- ![[Notification Center]]
+		- (tempted to click once the box appears? try it! what happened?)
 - [[Example Now Note|Example "Now" Note]] (kind of like a dashboard)
 
 # Example screenshots (SPOILERS)

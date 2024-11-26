@@ -82,9 +82,9 @@ aliases:
 - Not strictly Python or Scala, but *these* create folders ==within this vault==:
 	- `_actor_notes/notification_center`
 	- `_actor_notes/ollamaprompts`
-	- `attachments/mobile_audio_captures`
+	- `attachments/audio_captures`
 	- Consider the command:
-		- `mkdir -p _actor_notes/notification_center _actor_notes/ollamaprompts attachments/mobile_audio_captures`
+		- `mkdir -p _actor_notes/notification_center _actor_notes/ollamaprompts attachments/audio_captures`
 - Now let's confirm the install by downloading and running the transcription model, before getting the whole system up and going...
 	- Do ***not*** "Click to create" below, Obsidian should detect the file being created and update automatically when the above command is used
 	- Make a recording targeting this vault's `playground` folder, e.g.
