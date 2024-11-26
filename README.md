@@ -11,7 +11,7 @@ aliases:
 > - [tinker-starter-vault](https://github.com/micseydel/tinker-starter-vault/issues) for documentation or getting-started issues
 > 	- ==these instructions need to be modified for Windows==, but likely work on Apple Silicon (where they were tested)
 > - [tinker-casting](https://github.com/micseydel/tinker-casting/issues) for issues that are likely code rather than vault related
-> 	- [ ] VRAM requirements for Whisper need documentation
+> 	- if unsure, default to the repository above
 
 # This is Obsidian
 
@@ -43,6 +43,9 @@ aliases:
 
 # Viewing the source
 
+- **Notes:**
+	- non-coders can return to this section later
+	- if you skipped compilation above, IntelliJ will not work as well until an sbt compilation completes
 - Setup [IntelliJ community edition](https://www.jetbrains.com/idea/download/?section=mac) (for example via [Jetbrains Toolbox](https://www.jetbrains.com/toolbox-app/))
 	- Open `tinker-casting`
 	- ("Trust Project" is [recommended](https://www.jetbrains.com/help/idea/2024.2/project-security.html?Project_security))
@@ -66,8 +69,7 @@ aliases:
 
 # Python setup
 
-- [ ] `brew install ffmpeg`
-	- Please note any PATH issues that came up
+- `brew install ffmpeg`
 - `cd scripts` (this is generally for everything in the Python section)
 - `python3.10 -m venv py3.10_venv`
 	- Python 3.10 is needed (note: ==the specific dependencies need better documentation==)
@@ -94,6 +96,7 @@ aliases:
 
 # Rasa
 
+- **This cannot currently be skipped** - the transcription server fails if no trained model is detected
 - [[#^cd6662|Within the venv]], navigate to `scripts` and train the model
 	- `cd scripts`
 	- [ ] `rasa train`
@@ -107,7 +110,7 @@ aliases:
 		- vaultRoot `/Users/tinkercaster/Tinker Casting Starter Kit/Tinker Casting Starter Vault`
 		- audioWatchPath `/Users/tinkercaster/Tinker Casting Starter Kit/Tinker Casting Starter Vault/attachments/mobile_audio_captures`
 		- Other things can probably be left as-is
-	- [ ] `chmod +x tinkerenv.bash`
+	- `chmod +x tinkerenv.bash`
 - In 3 separate terminals
 	- `caffeinate ./tinkerenv.bash`
 	- Within `scripts`, ensuring the venv is activated in both,
