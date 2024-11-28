@@ -79,6 +79,7 @@ aliases:
 - `pip install --upgrade pip`
 - `pip install -r requirements.txt`
 	- (this may take some time to download things)
+	- If it fails, try running it again
 - Now let's confirm the install by downloading and running the transcription model, before getting the whole system up and going...
 	- Do ***not*** "Click to create" below, Obsidian should detect the file being created and update automatically when the above command is used
 	- Make a recording targeting this vault's `playground` folder, e.g.
@@ -110,6 +111,9 @@ aliases:
 	- Within `scripts`, ensuring the venv is activated in both,
 		- Start the transcription and Rasa server
 			- `python transcriber.py large 5001 ~/Tinker\ Casting\ Starter\ Kit/Tinker\ Casting\ Starter\ Vault/`
+			- There's a lot of output, if everything goes ok you can ignore anything before this:
+				- ![[Pasted image 20241128135148.png]]
+				- (your model name will vary)
 		- Test by using the same capture script as earlier,
 			- `python rec_unlimited_play.py ~/Tinker\ Casting\ Starter\ Kit/Tinker\ Casting\ Starter\ Vault/attachments/mobile_audio_captures/`
 			- Look at the Python server output to see the transcription status
