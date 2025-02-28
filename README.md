@@ -94,6 +94,8 @@ FYI - This is a "vault" intended to be viewed with [Obsidian](https://obsidian.m
 	- `cd scripts`
 	- [ ] `rasa train`
 - For training data, see `nlu.yml`
+- POTENTIALLY NEEDED
+	- `brew install librdkafka`  ([ref](https://github.com/confluentinc/confluent-kafka-python/issues/995))
 
 # ==Tinker Cast Deployment==
 
