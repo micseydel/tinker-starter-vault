@@ -1,3 +1,6 @@
+2025-02-28 UPDATE !!! I'm making big changes right now, this vault isn't stable against the codebase. Hopefully it will be soon, with a stable branch for future reference, but feel free to reach out.
+
+
 FYI - This is a "vault" intended to be viewed with [Obsidian](https://obsidian.md/) and manipulated with [this code repo](https://github.com/micseydel/tinker-casting). If you're viewing this [on Github](https://github.com/micseydel/tinker-starter-vault), you should download *both repos and and Obsidian* if you want to try it yourself. Obsidian isn't strictly required (and **isn't FOSS**) but it's how I interact with the folder of Markdown notes and is assumed everywhere but this paragraph.
 
 > [!caution] FYI
@@ -10,9 +13,9 @@ FYI - This is a "vault" intended to be viewed with [Obsidian](https://obsidian.m
 
 # This is Obsidian
 
-> [!info] Clicking here will show the source for this part of the note
+> [!info] Clicking here will show the source code for this part of the note
 > - Obsidian mostly uses [Markdown](https://en.wikipedia.org/wiki/Markdown)
-> - This is a [Callout](https://help.obsidian.md/Editing+and+formatting/Callouts) - not part of the Markdown standard
+> - This is a [Callout](https://help.obsidian.md/Editing+and+formatting/Callouts) - an Obsidian addition rather than pure Markdown
 
 - Consider installing a "Community Plugin" for a code copy button
 	- Open **Settings** with Cmd+P "open settings" or Cmd+,
